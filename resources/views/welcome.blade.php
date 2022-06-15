@@ -21,6 +21,6 @@
         </style>
     </head>
     <body class="antialiased">
-    Laravel
+    Laravel it is a new laravel heeeeey there kdwndwnqodnw
     </body>
 </html>
