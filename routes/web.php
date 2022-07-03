@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-
+Route::get('/test', [App\Http\Controllers\TestController::class, 'test']);
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -26,3 +26,9 @@ Route::get('/login/admin', [App\Http\Controllers\Auth\LoginController::class , '
 Route::post('/login/admin', [App\Http\Controllers\Auth\LoginController::class , 'adminLogin'])->name('admin.login');
 
 Route::view('/admin', 'admin')->middleware('auth:admin')->name('admin.home');
+
+Route::get("/ddd", function (){
+    return "ddd";
+});
+
+
